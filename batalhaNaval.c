@@ -3,13 +3,13 @@ int main (){
     //Tabuleiro de Batalha Naval
     //Print do tabuleiro
 
-    char letras[] = {'A', 'B', 'C', 'D', 'F', 'G', 'H', 'I', 'J'};
+    char letras[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
     printf("   ");
     for(int i = 0; i < 10; i++){
         printf("%c  ", letras[i]);
     }
     printf("\n");
-    int tabuleiro[10][10] = { 
+    int tabuleiro[10][11] = { 
         {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {2, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0},
         {3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0},
@@ -26,7 +26,7 @@ int main (){
     int linha, coluna;
 
             for (linha = 0; linha < 10; linha++){
-                for (coluna = 0; coluna < 10; coluna++)
+                for (coluna = 0; coluna < 11; coluna++)
                 {
                     printf("%d  ", tabuleiro[linha][coluna]);
                 }
