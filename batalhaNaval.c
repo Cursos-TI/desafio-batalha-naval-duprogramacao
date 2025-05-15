@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+#define coluna 10
+#define linha 11
 int main (){
     //Tabuleiro de Batalha Naval
     //Print do tabuleiro
@@ -10,25 +13,25 @@ int main (){
     }
     printf("\n");
     int tabuleiro[10][11] = { 
-        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {2, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0},
-        {3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0},
+        {1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {2, 0, 3, 0, 0, 0, 3, 0, 0, 0, 0},
+        {3, 0, 0, 3, 0, 0, 3, 0, 0, 0, 0},
         {4, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0},
         {5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {6, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0},
-        {7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {7, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0},
         {8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 
 
     };
-    int linha, coluna;
 
-            for (linha = 0; linha < 10; linha++){
-                for (coluna = 0; coluna < 11; coluna++)
+
+            for (int i = 0; i < coluna; i++){
+                for (int j = 0; j < linha; j++)
                 {
-                    printf("%d  ", tabuleiro[linha][coluna]);
+                    printf("%d  ", tabuleiro[i][j]);
                 }
                 printf("\n");
              }
